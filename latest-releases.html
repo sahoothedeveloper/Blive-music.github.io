@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Project Time</title>
+
+
+	<!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" type="text/css" href="img/swiper.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="pater/pater.css" />
+
+
+   <!--javascript-->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+ <header class="cd-header">
+    <div class="header-wrapper">
+
+      <div class="nav-but-wrap">
+        <div class="menu-icon hover-target">
+          <span class="menu-icon__line menu-icon__line-left"></span>
+          <span class="menu-icon__line"></span>
+          <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>          
+      </div>
+                
+    </div>        
+  </header>
+
+  <div class="nav">
+    <div class="nav__content">
+      <ul class="nav__list">
+        <li class="nav__list-item "><a href="index.html" class="hover-target">HOME</a></li>
+        <li class="nav__list-item"><a href="artist.html" class="hover-target">ARTIST</a></li>
+        <li class="nav__list-item"><a href="about-us.html" class="hover-target">ABOUT US</li>
+        <li class="nav__list-item"><a href="events.html" class="hover-target">EVENTS</a></li>
+        <li class="nav__list-item"><a href="contact.html" class="hover-target">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>      
+  
+  <div class='cursor' id="cursor"></div>
+  <div class='cursor2' id="cursor2"></div>
+  <div class='cursor3' id="cursor3"></div>     
+
+
+  
+
+  
+
+
+		<!--bootstrap java links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src='js/anime.min.js'></script>
+<script src='js/pieces.min.js'></script>
+<script src='js/demo.js'></script>
+
+
+    <script type="text/javascript">
+        /* Demo purposes only */
+  $("figure").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
+    </script>
+
+<script>
+  AOS.init({
+    duration:1000
+  });
+</script>
+
+
+        <!--nav section-->
+    <script>
+(function($) { "use strict";
+    
+  //Page cursors
+
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+    t.style.top = n.clientY + "px", 
+    e.style.left = n.clientX + "px", 
+    e.style.top = n.clientY + "px", 
+    i.style.left = n.clientX + "px", 
+    i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+  
+  //Navigation
+
+  var app = function () {
+    var body = undefined;
+    var menu = undefined;
+    var menuItems = undefined;
+    var init = function init() {
+      body = document.querySelector('body');
+      menu = document.querySelector('.menu-icon');
+      menuItems = document.querySelectorAll('.nav__list-item');
+      applyListeners();
+    };
+    var applyListeners = function applyListeners() {
+      menu.addEventListener('click', function () {
+        return toggleClass(body, 'nav-active');
+      });
+    };
+    var toggleClass = function toggleClass(element, stringClass) {
+      if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+    };
+    init();
+  }();
+
+  
+  //Switch light/dark
+  
+  $("#switch").on('click', function () {
+    if ($("body").hasClass("light")) {
+      $("body").removeClass("light");
+      $("#switch").removeClass("switched");
+    }
+    else {
+      $("body").addClass("light");
+      $("#switch").addClass("switched");
+    }
+  });
+  
+})(jQuery); 
+    </script><!--nav section end-->
+  
+
+</body>
+</html>
